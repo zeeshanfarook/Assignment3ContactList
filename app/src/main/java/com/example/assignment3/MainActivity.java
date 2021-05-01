@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         person.add(new Person("Mubashir", "Athar","03209472155"));
         person.add(new Person("Mubashir", "Athar","03209472155"));
         person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+        person.add(new Person("Mubashir", "Athar","03209472155"));
+
 
         myAdapter = new PersonAdapter(this,person);
         recyclerView.setAdapter(myAdapter);
