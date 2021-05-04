@@ -9,71 +9,67 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        card_view:cardBackgroundColor="#8ab6d6"
-        card_view:cardCornerRadius="7dp"
-        card_view:cardElevation="10dp"
-        android:layout_margin="7dp"
-        card_view:cardUseCompatPadding="false"
-        >
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="#ADCFE4"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="false">
 
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ivDp"
-            android:layout_width="64dp"
-            android:layout_height="63.1dp"
-            android:layout_weight="0"
-            android:padding="5dp"
-            app:shapeAppearanceOverlay="@style/Circular"
-            tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textStyle="bold" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivDp"
+                android:layout_width="64dp"
+                android:layout_height="63.1dp"
+                android:layout_weight="0"
+                android:padding="5dp"
+                app:shapeAppearanceOverlay="@style/Circular"
+                tools:srcCompat="@tools:sample/avatars" />
 
-            <TextView
-                android:id="@+id/tvPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivCallBtn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/ivVideoCallBtn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_video_call" />
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/ivCallBtn"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0"
-            app:srcCompat="@drawable/ic_call" />
-
-        <ImageView
-            android:id="@+id/ivVideoCallBtn"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0"
-            app:srcCompat="@drawable/ic_video_call" />
-
-    </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
